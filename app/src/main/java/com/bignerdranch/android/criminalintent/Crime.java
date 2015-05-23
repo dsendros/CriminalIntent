@@ -1,5 +1,6 @@
 package com.bignerdranch.android.criminalintent;
 
+import java.sql.Time;
 import java.util.Date;
 import java.util.UUID;
 
@@ -10,12 +11,15 @@ public class Crime {
     private UUID mId;
     private String mTitle;
     private Date mDate;
+    private Time mTime;
     private boolean mSolved;
 
     public Crime()  {
         //Generate unique identifier
         mId = UUID.randomUUID();
         setDate(new Date());
+        Time time = new Time(getDate().getTime());
+        setTime(time);
     }
 
     @Override
@@ -49,5 +53,13 @@ public class Crime {
 
     public void setSolved(boolean solved) {
         mSolved = solved;
+    }
+
+    public Time getTime() {
+        return mTime;
+    }
+
+    public void setTime(Time time) {
+        this.mTime = time;
     }
 }
