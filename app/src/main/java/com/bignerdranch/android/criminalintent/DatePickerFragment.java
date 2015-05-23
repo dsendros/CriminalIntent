@@ -72,7 +72,7 @@ public class DatePickerFragment extends DialogFragment {
     }
 
     private void sendResult(int resultCode) {
-        if (getTargetFragment() == null);{
+        if (getTargetFragment() == null){
             return;
         }
 
