@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.UUID;
 
 /**
- * Created by Dennis on 5/19/2015.
+ * Created by Dennis on 5/19/2015. Ok so now I'm just typing here.
  */
 public class CrimePagerActivity extends FragmentActivity {
     private ViewPager mViewPager;
@@ -53,7 +53,7 @@ public class CrimePagerActivity extends FragmentActivity {
             public void onPageScrollStateChanged(int state)    {}
 
             public void onPageScrolled(int pos, float posOffset, int posOffsetPixels)  {}
-            
+
             public void onPageSelected(int pos)    {
                 Crime crime = mCrimes.get(pos);
                 if (crime.getTitle() != null)   {
