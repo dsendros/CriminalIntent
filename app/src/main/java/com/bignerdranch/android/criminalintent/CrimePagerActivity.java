@@ -1,11 +1,13 @@
 package com.bignerdranch.android.criminalintent;
 
+import android.app.ActionBar;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.v13.app.FragmentStatePagerAdapter;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.ActionBarActivity;
 
 import java.util.ArrayList;
 import java.util.UUID;
@@ -13,7 +15,7 @@ import java.util.UUID;
 /**
  * Created by Dennis on 5/19/2015. Ok so now I'm just typing here.
  */
-public class CrimePagerActivity extends FragmentActivity {
+public class CrimePagerActivity extends ActionBarActivity {
     private ViewPager mViewPager;
     private ArrayList<Crime> mCrimes;
 
